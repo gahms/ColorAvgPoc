@@ -24,9 +24,12 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
+        collectionView.contentInset = .init(top: 10, left: 10, bottom: 10, right: 10)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
         let layout = collectionView.collectionViewLayout
         if let flowLayout = layout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(
@@ -37,7 +40,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
             )
         }
     }
-
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
@@ -48,17 +51,16 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderImageCell", for: indexPath) as! HeaderImageCell
-        /*
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = UIImage(named: imageNames[indexPath.item])
-         */
         let img = UIImage(named: imageNames[indexPath.item])!
+        cell.layer.cornerRadius = 16.0
         cell.imageView.image = img
-        cell.textLabel.text = imageNames[indexPath.item] + "\n" + imageNames[indexPath.item]
-        cell.bgColor = img.findAverageColor()!
-        cell.textBackgroundView.backgroundColor = UIColor.clear
-        //cell.textBackgroundView.backgroundColor = cell.bgColor
-        
+        //cell.textLabel.text = imageNames[indexPath.item] + "\n" + imageNames[indexPath.item]
+        cell.textLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        let col = img.findAverageColor()!
+        cell.textBackgroundView.backgroundColor = col
+        cell.textBackgroundGradientView.backgroundColor = .clear
+        cell.textBackgroundGradientView.color = col
+
         return cell
     }
 }

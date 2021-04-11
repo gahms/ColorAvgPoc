@@ -16,6 +16,7 @@
 		B1CF32F926219E2E00C17D8B /* FullWidthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */; };
 		B1CF32FC26219EBB00C17D8B /* HeaderImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */; };
 		B1CF32FF2621A33F00C17D8B /* UIImage+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */; };
+		B1CF33022622F5C900C17D8B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF33012622F5C900C17D8B /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageCell.swift; sourceTree = "<group>"; };
 		B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AverageColor.swift"; sourceTree = "<group>"; };
+		B1CF33012622F5C900C17D8B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */,
 				B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */,
 				B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */,
+				B1CF33012622F5C900C17D8B /* GradientView.swift */,
 			);
 			path = ColorAvgPoc;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				B1CF32FC26219EBB00C17D8B /* HeaderImageCell.swift in Sources */,
 				B1CF32E42621960800C17D8B /* AppDelegate.swift in Sources */,
 				B1CF32FF2621A33F00C17D8B /* UIImage+AverageColor.swift in Sources */,
+				B1CF33022622F5C900C17D8B /* GradientView.swift in Sources */,
 				B1CF32F926219E2E00C17D8B /* FullWidthCollectionViewCell.swift in Sources */,
 				B1CF32E62621960800C17D8B /* SceneDelegate.swift in Sources */,
 			);

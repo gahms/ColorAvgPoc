@@ -37,12 +37,19 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_alumni" translatesAutoresizingMaskIntoConstraints="NO" id="7hZ-KX-U1F" userLabel="ImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5op-qS-W2U">
-                                                    <rect key="frame" x="0.0" y="84" width="375" height="61"/>
-                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5op-qS-W2U" userLabel="textBackgroundGradientView" customClass="GradientView" customModule="ColorAvgPoc" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="86" width="375" height="31"/>
+                                                    <color key="backgroundColor" red="0.48212558030000002" green="0.43198364970000003" blue="0.39214891200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-cY-3MT" userLabel="textBackgroundView">
+                                                    <rect key="frame" x="0.0" y="117" width="375" height="28"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="28" id="QMH-bR-i76"/>
+                                                    </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBb-9e-ICw">
-                                                    <rect key="frame" x="8" y="100" width="375" height="41"/>
+                                                    <rect key="frame" x="8" y="98" width="375" height="41"/>
                                                     <string key="text">Line 1Line 2</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,12 +58,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="KBb-9e-ICw" firstAttribute="trailing" secondItem="5op-qS-W2U" secondAttribute="trailing" constant="8" id="1EP-fR-ICg"/>
-                                                <constraint firstAttribute="bottom" secondItem="5op-qS-W2U" secondAttribute="bottom" id="2VR-5W-KY1"/>
+                                                <constraint firstItem="dR8-cY-3MT" firstAttribute="leading" secondItem="5op-qS-W2U" secondAttribute="leading" id="5hO-gx-0Bh"/>
+                                                <constraint firstItem="dR8-cY-3MT" firstAttribute="bottom" secondItem="KBb-9e-ICw" secondAttribute="bottom" constant="6" id="6XZ-cz-U2a"/>
+                                                <constraint firstAttribute="bottom" secondItem="dR8-cY-3MT" secondAttribute="bottom" id="EA4-eh-5ar"/>
                                                 <constraint firstItem="7hZ-KX-U1F" firstAttribute="leading" secondItem="FEt-EH-ZtK" secondAttribute="leading" id="Mm1-8H-gLg"/>
-                                                <constraint firstItem="5op-qS-W2U" firstAttribute="bottom" secondItem="KBb-9e-ICw" secondAttribute="bottom" constant="4" id="OF7-Kf-GwD"/>
                                                 <constraint firstAttribute="bottom" secondItem="7hZ-KX-U1F" secondAttribute="bottom" id="PdI-h0-FFw"/>
+                                                <constraint firstItem="dR8-cY-3MT" firstAttribute="trailing" secondItem="5op-qS-W2U" secondAttribute="trailing" id="SgD-Qh-afy"/>
+                                                <constraint firstItem="dR8-cY-3MT" firstAttribute="top" secondItem="5op-qS-W2U" secondAttribute="bottom" id="ajr-Ky-7Wh"/>
                                                 <constraint firstItem="KBb-9e-ICw" firstAttribute="leading" secondItem="5op-qS-W2U" secondAttribute="leading" constant="8" id="fcO-NK-lko"/>
-                                                <constraint firstItem="KBb-9e-ICw" firstAttribute="top" secondItem="5op-qS-W2U" secondAttribute="top" constant="16" id="psr-uF-beA"/>
+                                                <constraint firstItem="KBb-9e-ICw" firstAttribute="top" secondItem="5op-qS-W2U" secondAttribute="top" constant="12" id="psr-uF-beA"/>
                                                 <constraint firstAttribute="trailing" secondItem="7hZ-KX-U1F" secondAttribute="trailing" id="qHj-PU-RHT"/>
                                                 <constraint firstItem="5op-qS-W2U" firstAttribute="leading" secondItem="FEt-EH-ZtK" secondAttribute="leading" id="qIm-sj-2bX"/>
                                                 <constraint firstItem="7hZ-KX-U1F" firstAttribute="top" secondItem="FEt-EH-ZtK" secondAttribute="top" id="vQx-Sr-NkJ"/>
@@ -65,7 +75,8 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="imageView" destination="7hZ-KX-U1F" id="d0e-kc-4pS"/>
-                                            <outlet property="textBackgroundView" destination="5op-qS-W2U" id="Ns7-6C-EWF"/>
+                                            <outlet property="textBackgroundGradientView" destination="5op-qS-W2U" id="kKY-fW-uYx"/>
+                                            <outlet property="textBackgroundView" destination="dR8-cY-3MT" id="8bL-6M-Fe5"/>
                                             <outlet property="textLabel" destination="KBb-9e-ICw" id="kVW-y9-Zui"/>
                                         </connections>
                                     </collectionViewCell>
@@ -97,9 +108,6 @@
         <image name="header_alumni" width="375" height="145"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
