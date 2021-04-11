@@ -13,6 +13,9 @@
 		B1CF32EB2621960800C17D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CF32E92621960800C17D8B /* Main.storyboard */; };
 		B1CF32ED2621960900C17D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CF32EC2621960900C17D8B /* Assets.xcassets */; };
 		B1CF32F02621960900C17D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CF32EE2621960900C17D8B /* LaunchScreen.storyboard */; };
+		B1CF32F926219E2E00C17D8B /* FullWidthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */; };
+		B1CF32FC26219EBB00C17D8B /* HeaderImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */; };
+		B1CF32FF2621A33F00C17D8B /* UIImage+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B1CF32EC2621960900C17D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1CF32EF2621960900C17D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1CF32F12621960900C17D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageCell.swift; sourceTree = "<group>"; };
+		B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AverageColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				B1CF32EC2621960900C17D8B /* Assets.xcassets */,
 				B1CF32EE2621960900C17D8B /* LaunchScreen.storyboard */,
 				B1CF32F12621960900C17D8B /* Info.plist */,
+				B1CF32F826219E2E00C17D8B /* FullWidthCollectionViewCell.swift */,
+				B1CF32FB26219EBB00C17D8B /* HeaderImageCell.swift */,
+				B1CF32FE2621A33F00C17D8B /* UIImage+AverageColor.swift */,
 			);
 			path = ColorAvgPoc;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CF32E82621960800C17D8B /* ViewController.swift in Sources */,
+				B1CF32FC26219EBB00C17D8B /* HeaderImageCell.swift in Sources */,
 				B1CF32E42621960800C17D8B /* AppDelegate.swift in Sources */,
+				B1CF32FF2621A33F00C17D8B /* UIImage+AverageColor.swift in Sources */,
+				B1CF32F926219E2E00C17D8B /* FullWidthCollectionViewCell.swift in Sources */,
 				B1CF32E62621960800C17D8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
